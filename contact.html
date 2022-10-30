@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Linking the contact file with External CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+  /*Imternal CSS for changing the background colour*/
+
+    body{
+     
+        background-color: rgb(158, 157, 137);
+    }
+    /* Internal CSS used for designing the social media icons */
+    i{
+        padding-top: 50px;
+        padding-right: 50px;
+        
+    }
+    /* Internal CSS used for designing the footer */
+    .footer{
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    /*Internal CSS used for universally giving margin and padding 0*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /*Giving background color to copyright divison*/
+    .copyright{
+        background-color: seagreen;
+
+    }
+    /*Internal CSS used for desging the heading 1 tag*/
+    h1{
+        text-align: center;
+        padding: 20px;
+    }
+   
+    </style>
+</head>
+<body>
+    
+    <!--Using  div tag for placing the navigation bar inside the divison area-->
+    <div class="navbar">
+        <nav>
+            <!--Inline CSS used for adjusting the width and margin of table.-->
+            <table style="width: 100%; margin: auto;" >
+                <tr>
+            <!--Classes made in anchor tags for designing and linking them with other navigation bars using External CSS-->
+                    <th> <a class="menu" href="index.html">Home</a> </th>
+                    <th> <a class="current" href="#">Contact Me</a> </th>
+                    <th> <a class="menu" href="blogs.html">My Blogs</a></th>
+                    <th> <a class="menu" href="cv.html">CV </a></th>
+                    <th> <a class="menu" href="#">Research</a> </th>
+                </tr>
+            </table>
+        </nav>
+       </div>
+        <!--Using a div tag for making  a form inside its own border. -->
+        <div class="form" style="margin-bottom: 10px; margin-top: 15px;">
+            <h1 style="font-family: 'Chela One', cursive; color: white; " > ContactMe </h1>
+            <form onsubmit="validation()" name="messageform">
+                <!--Using the line CSS -->
+              <p style="font-family: cursive;"> First Name:</p> <input type="text"  name="firstname"> <br> <br>
+              <p style="font-family: cursive;"> Last Name :</p> <input type="text" name="lastname"> <br> <br>
+               <p style="font-family: cursive;"> Email Address:</p> <input type="text" name="emailid"> <br> <br>
+              <p style="font-family: cursive;"> Password:</p> <input type="password" name="password"> <br> <br>
+              <p style="font-family: cursive;"> Message:</p> <br> <br><textarea cols="30" rows="10" name="message" placeholder="Enter message here..."></textarea> <br> <br>
+                <input type="Submit" class="btn" value="Confirm">
+            </form>
+        </div>
+        <!--Divison tag used for making a footer-->
+        <div class="footer" style="background-color: seagreen" >
+            <a href="https://www.facebook.com/utsav.basnet.37"  target="_blank">
+            <i class="fab fa-2x fa-facebook-f" style="color: blue; " ></i>
+            </a>
+            <a href="https://www.instagram.com/utsav_107/" style="color: palevioletred;" target="_blank">
+            <i class="fab fa-2x fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/UtsavBasnet100" style="color: blue;" target="_blank">
+            <i class="fab fa-2x fa-twitter"></i>
+            </a>
+        </div> 
+        <!--Inline CSS used for designing the footer -->
+        <div class="copyright">
+            <h1 style="font-family: 'Satisfy', cursive;">&copy; 2021 Utsav Basnet</h1>
+        </div>
+        <!--Making the internal Javascript for form validation -->
+        
+        <script>
+            function validation()
+    {
+        var fname=document.forms["messageform"] ["firstname"].value;
+        var lname=document.forms["messageform"] ["lastname"].value;
+        var Email=document.forms["messageform"] ["emailid"].value;
+        var password=document.forms["messageform"] ["password"].value;
+        var message=document.forms["messageform"] ["message"].value;
+        if (fname=="" || lname=="" || Email=="" || password=="" || message=="")
+        {
+            alert("Empty Fields Found!!!");
+        }
+        else{
+            alert("Thankyou for filling up the form. We'll contact you later...");
+        }
+        }
+        </script>     
+</body>
+</html>

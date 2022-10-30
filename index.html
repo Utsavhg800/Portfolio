@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <!--Meta tags used for setting up the  name and contenet and for refreshing the webpage in every two seconds-->
+    <meta charset="UTF-8">
+    <meta name="Description" content="Portfolio">
+    <meta name="Keyword" content="My Portfolio">
+    <meta name="Author" content="Utsav Basnet">
+    <meta http-equiv="refresh" content="2">
+    <!--Linking the index file with the external CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+     <!--Internal CSS used for inserting the background image and adjusting it-->
+    <style>
+            body{
+    background-image: url(images/proj.jpg);
+    background-size: 100% 100%;
+   }   
+   .btn{
+       
+       margin-bottom: 10px;
+       text-align: center;
+       margin-right: 3px;
+       
+   } 
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+    <nav>
+        <!--Adjusting table width and margin using Inline CSS-->
+        <table style="width: 100%; margin: auto;" >
+            <tr>
+                <!--Classes made in anchor tags for designing and linking them with other navigation bars using External CSS-->
+                <th> <a class="current" href="#">Home</a> </th>
+                <th> <a class="menu" href="contact.html">Contact Me</a> </th>
+                <th> <a class="menu" href="blogs.html">My Blogs</a></th>
+                <th> <a class="menu" href="cv.html">CV </a></th>
+                <th> <a class="menu" href="#">Research</a> </th>
+            </tr>
+        </table>
+    </nav> 
+    </div>
+   <br>  <p style="color: royalblue; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;"  id="demo"></p>
+    <!--Inline CSS used for Designing the heading 2 tag.-->  
+    <h2 style="color: white; margin-top: 60px; margin-left: 85px; font-family: 'Krona One', sans-serif; font-size: 52;">Hello,
+    </h2>
+    <!--Making class in paragraph tag which would be easier in designing it in the EXternal CSS-->
+    <p class="para1">I'm UTSAV. <br> <br> 
+        AN IT STUDENT <br> <br> STUDING   AT <br> <br> ISLINGTON COLLEGE.
+    </p>
+    <script>
+    document.getElementById("demo").innerHTML=Date();
+       </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/*Classes*/
+/*Classes of the navigation */
+.menu{
+    text-decoration: none;
+    color:white;
+
+}
+.current{
+    text-decoration: none;
+    color: darkolivegreen;
+
+}
+/* Anchor tag used for hovering*/
+a:hover{
+    color: orangered;
+}
+/*Classes of paragraph*/
+.para1{
+    
+    color: whitesmoke;
+    margin-left: 85px;
+    font-family: 'Itim', cursive;
+    font-size: 20;
+}
+/*Class of heading 1*/
+.head1{
+    font-family: 'Krona One', sans-serif;
+    font-size: 50;
+}
+/*Classes for different containers*/
+.container{
+    background-color: #eeeeee;
+    padding: 5px;
+    margin-top: 15px;
+}
+.education-container{
+    background-color: #eeeeee;
+}
+.skills-container{
+background-color: #eeeeee;
+}
+.career-container{
+    background-color:  #eeeeee;
+    ;
+}
+.strength-container{
+    background-color:  #eeeeee;
+
+}
+.Details-container{
+    background-color:  #eeeeee;
+
+}
+
+/*Class of a form*/
+.form{
+    width: 10%;
+    margin: auto;
+    margin-top: 50px;
+}
+i{
+    padding: 10px;
+    
+}
+/*Button*/
+
+  .btn:hover {
+    background: peru;
+  }
+  .btn{
+    background-color: crimson;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  
